@@ -106,9 +106,7 @@ function Country(props) {
 					? "Independent Country"
 					: "This is not A Independent Country"}
 			</p>
-			<p>
-				
-			</p>
+			<p></p>
 			<a href={maps.googleMaps} target="_blank" rel="noreferrer">
 				Google Maps
 			</a>
