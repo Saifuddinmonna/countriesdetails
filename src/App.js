@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 import { useEffect, useState } from "react";
 
@@ -14,6 +15,7 @@ function App() {
 			</a>
 			<Buttoninput></Buttoninput>
 			<Localcountries></Localcountries>
+			<Footer></Footer>
 		</div>
 	);
 }
@@ -29,7 +31,7 @@ const Buttoninput = () => {
 
 	return (
 		<div>
-			<input
+			<input className="input form  rounded border  m-2 p-1"
 				type="text"
 				id="message"
 				name="message"
@@ -53,7 +55,10 @@ function Localcountries(message) {
 	}, []);
 	return (
 		<div>
-			<h2> The Numbber of country is {countries.length}</h2>
+			<h2 className="text-dark border border-3 rounded-3 p-3 bg-light text-danger ">
+				{" "}
+				The Number of countries is {countries.length}
+			</h2>
 			<div className="dgrid container">
 				{countries.map((country) => (
 					<Country country={country}></Country>
