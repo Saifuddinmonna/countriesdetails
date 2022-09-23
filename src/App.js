@@ -31,7 +31,8 @@ const Buttoninput = () => {
 
 	return (
 		<div>
-			<input className="input form  rounded border  m-2 p-1"
+			<input
+				className="input form  rounded border  m-2 p-1"
 				type="text"
 				id="message"
 				name="message"
@@ -39,7 +40,7 @@ const Buttoninput = () => {
 				value={message}
 			/>
 			<h2>Search: {message}</h2>
-			<h1>React Practice with countries</h1>
+			<h1 className="text-wrap">React Practice with countries</h1>
 		</div>
 	);
 };
@@ -55,8 +56,7 @@ function Localcountries(message) {
 	}, []);
 	return (
 		<div>
-			<h2 className="text-dark border border-3 rounded-3 p-3 bg-light text-danger ">
-				{" "}
+			<h2 className="text-wrap text-dark border border-3 rounded-3 p-3 bg-light text-danger ">
 				The Number of countries is {countries.length}
 			</h2>
 			<div className="dgrid container">
